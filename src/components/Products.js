@@ -24,7 +24,7 @@ const Products = () => {
             const response = await fetch('http://localhost/pbt/get_products.php'); // Adjust the API endpoint
             if (response.ok) {
                 const data = await response.json();
-                // console.log("data", data);
+                console.log("data", data);
                 setProducts(data.data);
             } else {
                 console.error('Failed to fetch products');
